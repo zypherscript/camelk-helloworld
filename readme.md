@@ -1,0 +1,15 @@
+- src
+    - https://camel.apache.org/camel-k/next/installation/installation.html
+    - https://camel.apache.org/camel-k/next/running/running.html
+- run
+    - kubectl apply -f registry.yaml
+    - kubectl create ns camel-k
+    - helm repo add camel-k https://apache.github.io/camel-k/charts/
+    - helm install camel-k camel-k/camel-k -n camel-k
+    - kubectl apply -f itp.yaml -n camel-k
+    - kubectl apply -f hello.yaml
+- more
+    - registry docker-desktop
+        - docker run -d -p 5001:5000 --restart=always --name registry registry:2
+        - docker desktop: "insecure-registries": ["host.docker.internal:5001"]
+    - registry dockerhub > create secret

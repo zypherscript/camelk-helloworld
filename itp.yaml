@@ -1,0 +1,10 @@
+apiVersion: camel.apache.org/v1
+kind: IntegrationPlatform
+metadata:
+  name: camel-k
+  namespace: camel-k
+spec:
+  build:
+    registry:
+      address: registry.camel-k.svc.cluster.local:5000
+      insecure: true
