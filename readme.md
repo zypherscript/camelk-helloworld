@@ -1,6 +1,7 @@
 - src
     - https://camel.apache.org/camel-k/next/installation/installation.html
     - https://camel.apache.org/camel-k/next/running/running.html
+    - https://camel.apache.org/blog/2022/11/camel-k-jbang/
 - run
     - kubectl apply -f registry.yaml
     - kubectl create ns camel-k
